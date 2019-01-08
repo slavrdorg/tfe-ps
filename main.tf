@@ -1,3 +1,9 @@
+resource "null_resource" "version" {
+  provisioner "local-exec" {
+    command = "lsb_release -a"
+  }
+}
+
 resource "null_resource" "pwsh" {
   provisioner "local-exec" {
     command = <<EOH
