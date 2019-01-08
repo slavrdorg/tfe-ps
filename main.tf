@@ -5,7 +5,7 @@ wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-pr
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
 sudo apt-get install -y powershell
-pwsh -command "Install-Module -Name SqlServer"
+sudo pwsh -command "Install-Module -Name SqlServer"
 EOH
   }
 }
